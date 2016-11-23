@@ -1,0 +1,34 @@
+<div class="body">
+
+  <h1>Simulador Web CT</h1>
+
+  <div id="resultado">
+    <tfg-traza></tfg-traza>
+  </div><!-- Formulario para que el usuario meta el código y el estado inicial de la CPU -->
+  <form  enctype="multipart/form-data" method="post" name="Enviar" id="Enviar"  action="/tools/CPU/simulador.php">
+    <div class="recuadro">
+      <h2>Programa</h2>
+      <table>
+        <tr>
+          <td class="listado">
+            <tfg-codigo></tfg-codigo>
+          </td>
+          <td class="inicializacion">
+            <table>
+              <tfg-registros></tfg-registros>
+            </table>
+            <br/>
+            <tfg-memoria></tfg-memoria>
+          </td>
+        </tr>
+      </table>
+    </div><!-- Fin del div  "recuadro" -->
+  </form>
+
+  <div class="banner">
+    <p>
+	    <a href="http://www.atc.uniovi.es"><img src="banner.png" alt="Logo ATC"/></a>
+	  </p>
+  </div>
+
+</div><!-- Fin del div "body" -->

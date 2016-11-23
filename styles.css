@@ -1,0 +1,252 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+
+	color: #000000;
+	font-size: 13px;
+	font-family: "Century Gothic", Helvetica, sans-serif;
+	font-family: 'TRANA', sans-serif;
+	font-family: "Droid Sans Mono", "Consolas", "Monaco",
+		"Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+
+	color: #000000;
+	font-size: 13px;
+	font-family: "Century Gothic", Helvetica, sans-serif;
+	font-family: 'TRANA', sans-serif;
+	font-family: "Droid Sans Mono", "Consolas", "Monaco",
+		"Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+
+	background-image: linear-gradient(top, rgba(38,38,38,0.5) 0%, rgba(38,38,38,0.5) 17%, rgba(38,38,38,0) 100%);
+	background-image: -o-linear-gradient(top, rgba(38,38,38,0.5) 0%, rgba(38,38,38,0.5) 17%, rgba(38,38,38,0) 100%);
+	background-image: -moz-linear-gradient(top, rgba(38,38,38,0.5) 0%, rgba(38,38,38,0.5) 17%, rgba(38,38,38,0) 100%);
+	background-image: -webkit-linear-gradient(top, rgba(38,38,38,0.5) 0%, rgba(38,38,38,0.5) 17%, rgba(38,38,38,0) 100%);
+	background-image: -ms-linear-gradient(top, rgba(38,38,38,0.5) 0%, rgba(38,38,38,0.5) 17%, rgba(38,38,38,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80262626', endColorstr='#00262626', GradientType=0);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(38,38,38,0.5)),
+		color-stop(0.17, rgba(38,38,38,0.5)),
+		color-stop(1, rgba(38,38,38,0))
+	);
+
+	background-attachment: fixed;
+	background-color: #e0ded7;
+	background-size: auto 450px;
+	background-repeat: repeat-x;
+
+	margin: auto auto;
+}
+
+
+div.body {
+	width: 800px;
+	margin: auto auto;
+}
+
+h1 {
+	font-size: 36px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	color: #eee;
+}
+
+h2 {
+     padding: 5pt;
+     padding-left: 2ex;
+     margin-top: 0ex;
+     font-size: large;
+}
+
+.importante{
+    background-color: #FFFFA0;
+}
+
+#resultado, form#Enviar {
+  background-color: #f9f9f9;
+}
+
+#resultado, form#Enviar, #errores {
+  box-shadow: 0px 0px 10px #aaa;
+}
+
+#resultado, #errores {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#resultado h2, h2 {
+  color: #fff;
+  background-color: #014B96;
+}
+
+#resultado a, #errores a {
+   text-decoration: none;
+   color: white;
+   background-color: #999999;
+   border: 1px solid #555555;
+   padding: 0px 10px 0px 10px;
+   float: right;
+   text-transform: none;
+   font-weight: normal;
+   font-size: 90%;
+   padding-left: 1em;
+   padding-right: 1em;
+}
+
+#errores {
+  color: #CC1100;
+  background-color: #fdd;
+}
+
+#errores h2 {
+  color: white;
+  background-color: #CC1100;
+}
+
+pre {
+  background-color: black;
+  font-weight: normal;
+  color: white;
+  margin: 2em;
+}
+
+#errores .error{
+  font-weight: normal;
+  color: black;
+  padding: 0pt 0pt 1ex 1ex;
+}
+
+.ok {
+  color: #00CC5F;
+  font-weight:bold;
+  margin:2ex 0pt 1ex 0pt;
+  background-color:#dfe;
+}
+
+.inicial {
+  background-color: #FFF;
+}
+
+.final {
+  background-color: #FFF;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0pt;
+  margin: auto auto;
+}
+
+td {
+  background-color: #dfdfdf;
+  color: #000;
+  padding: 4px;
+  text-align: left;
+  border: 1px #BBB solid;
+}
+
+th {
+  background-color: #ccc;
+  color: #333;
+  padding: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px #aaa solid;
+}
+
+.listado{
+  float: left;
+}
+
+.registros{
+  float: right;
+}
+
+.botonera{
+  clear: both;
+}
+
+.inicializacion table input {
+   text-align: center;
+   font-family: Consolas, Courier;
+   margin: 0pt auto 0pt auto;
+}
+
+.direccion {
+  text-align: center;
+}
+
+.contenido {
+  text-align: center;
+}
+
+.inicializacion {
+  padding: 1em;
+}
+
+.listado {
+  padding: 1em;
+}
+
+textarea {
+  font-family: Consolas, courier;
+  font-size: small;
+}
+
+.registro, .PC, .flags {
+  font-family: Consolas, courier;
+  text-align: center;
+}
+
+.parada {
+  text-align: center;
+  margin: 2ex 0pt 0pt 0pt;
+  padding-bottom: 10pt;
+}
+
+.result {
+  margin: 2ex 0pt 0pt 0pt;
+}
+
+.cambiado {
+  color: red;
+}
+
+td.listado, td.inicializacion {
+  border: 0;
+  background: transparent;
+}
+
+.botonReiniciar {
+  text-align: center;
+}
+
+p {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.banner {
+	padding-top: 1em;
+	font-size: 36px;
+	text-align: center;
+	font-weight: bold;
+	color: #eee;
+}
+
+.banner a, .banner img{
+	border: 0px solid white;
+}
