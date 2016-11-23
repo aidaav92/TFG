@@ -7,6 +7,7 @@ import { CodigoComponent } from './components/codigo/codigo.component';
 import { MemoriaComponent } from './components/memoria/memoria.component';
 import { RegistrosComponent } from './components/registros/registros.component';
 import { TrazaComponent } from './components/traza/traza.component';
+import { MensajesComponent } from './components/mensajes/mensajes.component';
 
 import {CpuService} from './services/cpu.service';
 
@@ -20,7 +21,8 @@ import {CpuService} from './services/cpu.service';
     CodigoComponent,
     MemoriaComponent,
     RegistrosComponent,
-    TrazaComponent
+    TrazaComponent,
+    MensajesComponent
   ],
   providers: [CpuService],
   bootstrap: [ AppComponent ]

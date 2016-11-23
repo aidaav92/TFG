@@ -1,0 +1,6 @@
+<div class="errores">
+  <div *ngFor="let error of errores; let indice = index">
+    {{error}}
+    <a href="#" (click)="borrar(indice)">Borrar</a>
+  </div>
+</div>

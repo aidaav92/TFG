@@ -1,16 +1,10 @@
     <p>Escribe tu programa aquí debajo o cárgalo desde un archivo:
-      <input tabindex="90" type="button" value="Ejemplo" class="enviar" onClick="this.form.elements['ens'].value='; Suma 2 + 3 y deja el resultado en R0\nMOVL R1,2\nMOVH R1,0\nMOVL R2,3\nMOVH R2,0\nADD  R0, R1, R2\n'">
-        <input tabindex="90" type="button" value="..." >
+      <input tabindex="90" type="button" value="Ejemplo" class="enviar" (click)="asignarCodigoPorDefecto()">
+        <input tabindex="90" type="file" (change)="asignarCodigoSubido($event.target.files)" />
     </p>
-      <textarea tabindex="1" rows="20" cols="70" name="ens" wrap="off" autofocus>; Suma 2 + 3 y deja el resultado en R0
-MOVL R1,2
-MOVH R1,0
-MOVL R2,3
-MOVH R2,0
-ADD  R0, R1, R2
-</textarea>
+    <textarea [(ngModel)]="codigo" tabindex="1" rows="20" cols="70" name="ens" wrap="off" autofocus></textarea>
     <p><input tabindex="30" type="checkbox" value="1" name="trazar" /> Obtener trazado de cada instrucción</p>
     <p align="center">
     <input type="submit" tabindex="31" value="¡Ejecutar!" class="enviar" />
-    <input type="button" tabindex="32" value="Borrar" class="enviar" onClick="BorrarCodigo(this)">
+    <input type="button" tabindex="32" value="Borrar" class="enviar" (click)="borrarCodigo()">
     </p>

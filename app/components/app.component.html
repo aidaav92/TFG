@@ -2,6 +2,8 @@
 
   <h1>Simulador Web CT</h1>
 
+  <tfg-mensajes></tfg-mensajes>
+
   <div id="resultado">
     <tfg-traza></tfg-traza>
   </div><!-- Formulario para que el usuario meta el código y el estado inicial de la CPU -->
@@ -19,6 +21,9 @@
             </table>
             <br/>
             <tfg-memoria></tfg-memoria>
+            <p class="botonReiniciar">
+              <input tabindex="29" type="button" value="Reiniciar" class="enviar" (click)="BorrarRegistros()">
+            </p>
           </td>
         </tr>
       </table>
